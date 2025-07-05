@@ -38,7 +38,7 @@ const server = http.createServer(app);
 // Setup Socket.IO
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173", // frontend
+    origin:[ "http://localhost:5173","https://location-app-frontend-blond.vercel.app"] ,// frontend
     methods: ["GET", "POST"]
   }
 });
